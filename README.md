@@ -11,7 +11,7 @@ This repository documents my journey building a TimeTracker application with Rea
 A multi-day deep-dive into a persistent `500: Database error saving new user` error caused by a cascading series of issues, including a "ghost" PostgreSQL trigger, frontend data mismatches, and RLS (Row Level Security) complexities. The final solution involved a strategic shift from an automated trigger to an explicit RPC call.
 
 * **[📄 Read the Full Debug Report](./case-001-auth-trigger/report.md)**
-* **[💬 Relive the Interactive Debugging Session (Gemini Chat)](PASTE_YOUR_SHARED_GEMINI_LINK_HERE)**
+* **[💬 Relive the Interactive Debugging Session (Gemini Chat)](https://g.co/gemini/share/3982645bdc70)**
 
 ---
 
