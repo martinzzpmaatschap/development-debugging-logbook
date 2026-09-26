@@ -15,4 +15,37 @@ A multi-day deep-dive into a persistent `500: Database error saving new user` er
 
 ---
 
+### Debug Log 2025-09-30: Supabase User Deletion with Foreign Key Constraints
+
+Users could not be deleted via the Supabase Auth UI ("Database error deleting user") because foreign keys without `ON DELETE CASCADE` blocked the delete. Covers how to find the blocking table with a direct SQL delete, the correct manual cleanup order, and adding `CASCADE` to prevent it from happening again.
+
+* **[📄 Read the Debug Log](./2025-09-30-supabase-user-deletion-foreign-keys.md)**
+
+---
+
+### Case #002: De RLS-Vesting - Architectuurconflicten in een Multi-Tenant App
+
+Securing a multi-tenant TimeTracker with Row Level Security turned into a full architecture audit: 10+ outdated, conflicting policies undermined the new rules, and the `invite-employee` Edge Function clashed with the database trigger. Resolved through a phased cleanup and a single trigger-driven onboarding flow. *(Written in Dutch.)*
+
+* **[📄 Read the Case Study](./case-002-rls-vesting-architectuurconflicten.md)**
+
+---
+
+### Case #003: Espanso Detection Failure on Ubuntu 24.04 — GNOME Shortcuts Workaround
+
+Espanso 2.3.0 parsed its config and could inject text, but never detected typed triggers on Ubuntu 24.04 + GNOME + Xorg. Testing detection and injection separately showed only detection was broken; the workaround binds GNOME keyboard shortcuts to `espanso match exec`.
+
+* **[📄 Read the Case Study](./case-003-espanso-detection-failure.md)**
+* **Files:** [`trust_prompts.yml`](./trust_prompts.yml) · [`setup-trust-shortcuts.sh`](./setup-trust-shortcuts.sh)
+
+---
+
+### Case #004: Logbook Housekeeping — Index, Broken Link, Lost Markdown
+
+A short report on repairing this logbook itself: missing README entries, a dead link caused by a duplicate-download filename (`trust_prompts (1).yml`), and a debug log whose markdown formatting was lost.
+
+* **[📄 Read the Case Study](./case-004-logbook-housekeeping.md)**
+
+---
+
 *More case studies will be added as the project progresses.*
