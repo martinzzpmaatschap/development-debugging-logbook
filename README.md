@@ -48,4 +48,12 @@ A short report on repairing this logbook itself: missing README entries, a dead 
 
 ---
 
+### Case #005: A Pre-Registered NO-GO for an LLM Classifier on BTC 4H Price Direction
+
+A pre-registered replay testing whether a cheap LLM classifier can predict BTC's next-4h price direction well enough to trade, after costs. Result: NO-GO, independently reproduced by one external reviewer from raw files, and probed for alternatives by a second — neither reopens the question, but both land on the same underlying point about what this kind of model is actually good at.
+
+* **[📄 Read the Full Case Study](./case-005-jev-btc-classifier-no-go.md)**
+
+---
+
 *More case studies will be added as the project progresses.*
